@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		// Seleziona tutti gli elementi con classe "nav-link"
+		var navLinks = document.querySelectorAll(".nav-link");
+	
+		// Aggiungi un listener per l'evento "mouseover" a ciascun elemento nav-link
+		navLinks.forEach(function(link) {
+		  link.addEventListener("mouseover", function() {
+			// Aggiungi la classe CSS "hover" all'elemento nav-link corrente
+			this.classList.add("hover");
+		  });
+	
+		  // Aggiungi un listener per l'evento "mouseout" a ciascun elemento nav-link
+		  link.addEventListener("mouseout", function() {
+			// Rimuovi la classe CSS "hover" dall'elemento nav-link corrente
+			this.classList.remove("hover");
+		  });
+		});
+	  </script>
+	<title>GreenGo | Sustainable Mobility Solutions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		/* Styles for the environmental sustainability theme */
+		body {
+			background-color: #e6f4f1;
+			font-family: Arial, sans-serif;
+			color: #374b5a;
+		}
+        
+        .hero h2 {
+  color:rgb(27, 142, 251) /* Cambia il colore qui */
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.hero img {
+  filter: blur(5px);
+  width: 100%;
+}
+
+		.logo h1 {
+			color: #3aa889;
+		}
+		nav a {
+			color: #c5e4fd;
+		}
+		/* Styles for the values section */
+		.values {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			margin: 50px 0;
+		}
+		.value {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+			flex-basis: calc(33.333% - 20px);
+			margin: 10px;
+			padding: 20px;
+			max-width: 300px;
+			text-align: center;
+			transition: transform 0.2s ease-in-out;
+		}
+		.value:hover {
+			transform: translateY(-5px);
+			box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+		}
+		.value h3 {
+			color: #3aa889;
+			margin-top: 0;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.value p {
+			margin: 20px 0;
+			font-size: 18px;
+			line-height: 1.5;
+		}
+		/* Styles for the CTA button */
+		.cta {
+			background-color: #3aa889;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			margin-top: 20px;
+			display: inline-block;
+			text-decoration: none;
+			transition: background-color 0.2s ease-in-out;
+		}
+		.cta:hover {
+			background-color: #259f76;
+		}
+
+        .navbar {
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-between;
+		  background-color: #F9A11B;
+		  padding: 20px;
+		}
+
+		.navbar-brand {
+		  font-size: 30px;
+		  font-weight: bold;
+		  color: white;
+		  text-decoration: none;
+		}
+
+		.navbar-nav {
+		  display: flex;
+		  list-style: none;
+		}
+
+		.nav-item {
+		  margin-right: 30px;
+		}
+
+		.nav-link {
+		  color: rgb(255, 255, 255);
+		  text-decoration: none;
+		  font-size: 20px;
+		  font-weight: bold;
+		  transition: color 0.2s ease-in-out;
+		}
+		
+		
+		body {
+  background-image: linear-gradient(to bottom right, #8bc34a, #4caf50, #009688, #00796b);
+}
+		.nav-link:hover {
+		  color: #4F4F4F;
+		}
+		.hover {
+  transform: scale(1.1); /* ingrandisce l'elemento */
+  color: #fff; /* cambia il colore del testo */
+}
+
+/* Classe per l'effetto "shake" sull'elemento h2 */
+.shake {
+  animation: shake 1s ease-out; /* utilizza l'animazione "shake" per 1 secondo */
+}
+
+/* Definizione dell'animazione "shake" */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-5deg); }
+  50% { transform: translateX(0) rotate(0deg); }
+  75% { transform: translateX(5px) rotate(5deg); }
+  100% { transform: translateX(0) rotate(0deg); }
+}
+
+	</style>
+</head>
+<body>
+	<script>
+		// Seleziona l'elemento h2
+		var h2 = document.querySelector("h2");
+	
+		// Aggiungi un listener per l'evento "mouseover" all'elemento h2
+		h2.addEventListener("mouseover", function() {
+		  // Aggiungi la classe CSS "shake" all'elemento h2
+		  this.classList.add("shake");
+	
+		  // Rimuovi la classe CSS "shake" dall'elemento h2 dopo 1 secondo
+		  setTimeout(function() {
+			h2.classList.remove("shake");
+		  }, 1000);
+		});
+	  </script>
+	<header>
+		<div class="logo">
+			<img src="C:\Users\asrun\Downloads\WhatsApp Image 2023-04-20 at 19.27.36.jpeg" alt="GreenGo logo">
+            <nav class="navbar">
+                <a href="#" class="navbar-brand"></a>		</div>
+		<nav class="navbar">            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          
+	</header>
+	<main>
+        <section class="hero">
+            <div class="hero-container">
+              <h2>Make your journey sustainable with us</h2>
+            </div>
+            <img src="C:\Users\asrun\Downloads\WhatsApp Image 2023-04-20 at 19.27.36.jpeg" alt="Main image">
+          </section>
+		<section class="values">
+			<div class="value">
+				<h3>Sustainability</h3>
+				<p>We are committed to minimizing our environmental impact and promoting sustainable practices in all aspects of our operations.</p>
+			</div>
+			<div class="value">
+				<h3>Accessibility</h3>
+				<p>We believe that everyone should have access to affordable and convenient transportation options, regardless of income or ability.</p>
+			</div>
+			<div class="value">
+				<h3>Innovation</h3>
+				<p>We are constantly exploring new technologies and ideas to improve our services and meet the evolving needs of our customers and communities.</p>
+			</div>
+			<div class="value">
+				<h3>Community</h3>
+				<p>We value strong relationships with our customers, employees, and local partners, and strive to make positive contributions to the communities. </p>
+                </div>
+                    <div class="value">
+                        <h3>Our Goals</h3>
+                        <p>Our ultimate goal is to create a transportation system that is both sustainable and accessible to all, while fostering innovation and supporting the communities we serve.</p>
+                    </div>
+                </section>
